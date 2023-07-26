@@ -1,0 +1,19 @@
+{
+  "name": "mycontacts-backend-api",
+  "version": "1.0.0",
+  "description": "an express project api to manage my contacts",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Cluab/Contact-Manager-backend.git"
+  },
+  "author": "cluab",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Cluab/Contact-Manager-backend/issues"
+  },
+  "homepage": "https://github.com/Cluab/Contact-Manager-backend#readme"
+}
