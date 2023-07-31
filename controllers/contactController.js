@@ -1,20 +1,26 @@
-const getContacts = (req, res) => {
+const getContacts = async (req, res) => {
   res.status(200).json({ message: 'Get All Contacts' });
 };
 
-const getContact = (req, res) => {
+const getContact = async (req, res) => {
   res.status(200).json({ message: `get contact for ${req.params.id}` });
 };
 
-const createContact = (req, res) => {
+const createContact = async (req, res) => {
+  console.log(req.body);
+  const { name, email, phone } = req.body;
+  if (!name || !email || !phone) {
+    res.status(400);
+    throw new Error('all fields are mandatory');
+  }
   res.status(201).json({ message: 'Crate Contacts' });
 };
 
-const updateContact = (req, res) => {
+const updateContact = async (req, res) => {
   res.status(201).json({ message: `update contact for ${req.params.id}` });
 };
 
-const deleteContact = (req, res) => {
+const deleteContact = async (req, res) => {
   res.status(201).json({ message: `delete contact with ${req.params.id} id` });
 };
 
