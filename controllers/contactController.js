@@ -7,15 +7,15 @@ const getContact = (req, res) => {
 };
 
 const createContact = (req, res) => {
-  res.status(200).json({ message: 'Crate Contacts' });
+  res.status(201).json({ message: 'Crate Contacts' });
 };
 
 const updateContact = (req, res) => {
-  res.status(200).json({ message: `update contact for ${req.params.id}` });
+  res.status(201).json({ message: `update contact for ${req.params.id}` });
 };
 
 const deleteContact = (req, res) => {
-  res.status(200).json({ message: `delete contact with ${req.params.id} id` });
+  res.status(201).json({ message: `delete contact with ${req.params.id} id` });
 };
 
 module.exports = {
