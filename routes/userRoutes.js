@@ -3,7 +3,7 @@ const express = require('express');
 const router = express.Router();
 
 router.post('/register', (req, res) => {
-  res.json({ message: 'Register the user' });
+  res.status(200).json({ message: 'Register the user' });
 });
 
 router.post('/login', (req, res) => {
